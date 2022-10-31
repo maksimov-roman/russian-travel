@@ -1,0 +1,14 @@
+.page__header {
+    padding: 0 48px;
+    
+}
+@media screen and (max-width: 896px) {
+    .page__header {
+        padding: 0 24px;
+    }
+}
+@media screen and (max-width: 544px) {
+    .page__header {
+        padding: 0 16px;
+    }
+}
