@@ -1,0 +1,15 @@
+.footer__navigation {
+    display: flex;
+    column-gap: 18px;
+}
+@media screen and (max-width: 730px) {
+    .footer__navigation {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+}
+@media screen and (max-width: 544px) {
+    .footer__navigation {
+        row-gap: 32px;
+    }
+}

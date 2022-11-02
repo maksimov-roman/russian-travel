@@ -5,8 +5,24 @@
     line-height: 22px;
     text-decoration-line: underline;
     color: #FFFFFF;
+    transition: 1s linear 0s;
+    cursor: pointer;
 }
 .place__link:hover {
-    transition: 1s linear 0s;
-    opacity: 40%;
+    opacity: 80%;
   }
+  @media screen and (max-width: 896px) {
+    .place__link {
+        max-width: 100%;
+    }
+}
+@media screen and (max-width: 600px) {
+    .place__link {
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 544px) {
+    .place__link {
+        font-size: 18px;
+    }
+}

@@ -1,4 +1,12 @@
 .place__website {
     max-width: 456px;
     align-self: end;
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+}
+@media screen and (max-width: 544px) {
+    .place__website {
+    max-width: calc(100% - 32px);
+    }
 }

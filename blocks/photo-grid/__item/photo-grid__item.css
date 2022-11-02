@@ -2,17 +2,14 @@
     max-width: 100%;
     object-fit: cover;
     background-size: cover;
+    display: block;
 }
 @media screen and (max-width: 896px) {
     .photo-grid__item {
-        max-width: 352px;
+        max-width: 100%;
     }
 }
-@media screen and (max-width: 676px) {
-    .photo-grid__item {
-        max-width: 288px;
-    }
-}
+
 @media screen and (max-width: 544px) {
     .photo-grid__item {
         max-width: 288px;

@@ -3,35 +3,41 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="./pages/index.css">
+    <link rel="stylesheet" href="./pages/index.css">
     <title>Путешествие по&nbsp;России</title>
   </head>
   <body class="page">
     <header class="header page__header">
       <img
         src="./images/header-logo.svg"
-        alt="Силуэт карты России и надпись Россия"
+        alt="Логотип проекта Путешествие по России с изображением силуэта карты России"
         class="header__logo">
-      <div class="header__lang-link">
-        <a href="#" class="header__lang-link header__lang-link_active">Ru</a>
-        <a href="#" class="header__lang-link header__lang-link_inactive">En</a>
-      </div>
+      <ul class="header__lang-link">
+        <li>
+        <a href="#" class="header__lang-link header__lang-link_lang">Ru</a>
+        </li>
+        <li>
+        <a href="#" class="header__lang-link header__lang-link">En</a>
+        </li>
+      </ul>
     </header>
     <main class="content">
       <section class="lead content__lead">
-        <h1 class="lead__title">Путешествие по&nbsp;России</h1>
+        <h1 class="lead__title">Путешествия по&nbsp;России</h1>
         <p class="lead__subtitle">
           Настоящая страна не&nbsp;в&nbsp;выпусках новостей, а&nbsp;здесь.
         </p>
-        <img
+        <figure>
+          <img
           src="./images/lead-polka.jpg"
           alt="Поезд маршрутом следования Псков-Улад-Удэ"
           class="lead__image">
-        <p class="lead__caption">ваша полка&nbsp;&mdash; верхняя</p>
+         <figcaption class="lead__caption">ваша полка&nbsp;&mdash; верхняя</figcaption>
+        </figure>
       </section>
       <section class="intro content__intro">
         <h2 class="intro__title">Чего мы&nbsp;там не&nbsp;видели?</h2>
-        <blockquote class="intro__text">
+        <p class="intro__text">
           По&nbsp;опросам ВЦИОМ, 95% россиян мечтают куда-нибудь поехать, но&nbsp;только
 36% планируют провести отпуск в&nbsp;родной стране. Мол, чего мы&nbsp;тут, дома,
 не&nbsp;видели? На&nbsp;самом деле, Россия&nbsp;&mdash; это целая вселенная с&nbsp;ласковым
@@ -41,24 +47,24 @@
 мама, которая взяла в&nbsp;охапку троих детей, усадила их&nbsp;в&nbsp;свою &laquo;Ладу&raquo; и
 проехала 20&nbsp;тысяч километров по&nbsp;родной стране. Мы&nbsp;выбрали и&nbsp;описали
 некоторые интересные места, достойные вашего отпуска.
-        </blockquote>
+        </p>
         <ul class="intro__list">
-          <li>Часовых поясов <span class="intro__list intro__list_number">11</span></li>
+          <li>Часовых поясов <span class="intro__list_small-font">11</span></li>
           <li>
             Объектов природного наследия ЮНЕСКО
-            <span class="intro__list intro__list_number">12</span>
+            <span class="intro__list_small-font">12</span>
           </li>
           <li>
             Объектов культурного наследия ЮНЕСКО
-            <span class="intro__list intro__list_number">16</span>
+            <span class="intro__list_small-font">16</span>
           </li>
           <li>
-            Природных заповедников <span class="intro__list intro__list intro__list_number">105</span>
+            Природных заповедников <span class="intro__list_small-font">105</span>
           </li>
-          <li>Аэропортов <span class="intro__list intro__list_number">241</span></li>
+          <li>Аэропортов <span class="intro__list_small-font">241</span></li>
         </ul>
       </section>
-      <div class="photo-grid content__photo-grid">
+      <section class="photo-grid content__photo-grid">
         <img
           src="./images/photo-grid-train.jpg"
           alt="Вид из окна поезда"
@@ -107,24 +113,26 @@
           src="./images/photo-grid-ergaki.jpg"
           alt="Покрытые туманом горные склоны"
           class="photo-grid__item">
-      </div>
+      </section>
       <section class="places content__places">
-        <div class="place">
+        <article class="place">
           <h2 class="place__title">Куршская коса</h2>
           <div class="place__website">
-            <p class="place__url-heading">URL</p>
-            <a href="http://park-kosa.ru" class="place__link">park-kosa.ru</a>
+            <span class="place__url-heading">URL</span>
+            <a href="http://park-kosa.ru" class="place__link" target="_blank" rel="noopener noreferrer">park-kosa.ru</a>
           </div>
           <img
             src="./images/place-kosa.jpg"
             alt="Обломки деревьев и камни в прозрачное воде"
             class="place__image">
-          <div>
+          <div class="place__paragraphs">
             <p class="place__paragraph">
               Здесь, посреди лесов и&nbsp;песчаных дюн, вы&nbsp;сможете увидеть два водных
 горизонта&nbsp;&mdash; спокойного Куршского залива с&nbsp;одной стороны и
 подёрнутого рябью волн Балтийского моря с&nbsp;другой. Уникальная
 природная зона на&nbsp;краю российского анклава.
+            </p>
+            <p>
             </p>
             <p class="place__paragraph">
               На&nbsp;этом Калининградская область не&nbsp;заканчивается. Для
@@ -135,14 +143,14 @@
 прохладного моря.
             </p>
           </div>
-        </div>
-        <div class="place">
+        </article>
+        <article class="place">
           <h2 class="place__title">Кольский</h2>
           <div class="place__website">
-            <p class="place__url-heading">URL</p>
+            <span class="place__url-heading">URL</span>
             <a
               href="https://yourshot.nationalgeographic.com/photos/?keywords=kolskiy"
-              class="place__link"
+              class="place__link" target="_blank" rel="noopener noreferrer"
               >National Geographic</a
             >
           </div>
@@ -150,11 +158,13 @@
             src="./images/place-kolsky.jpg"
             alt="Снежные холмы"
             class="place__image">
-          <div>
+          <div class="place__paragraphs">
             <p class="place__paragraph">
               Почти весь полуостров находится за&nbsp;Полярным кругом. Саамская
 тундра, от&nbsp;которой на&nbsp;юг&nbsp;&mdash; тайга, а&nbsp;на&nbsp;север&nbsp;&mdash; Ледовитый океан,
 прикидывающийся Баренцевым морем.
+            </p>
+            <p>
             </p>
             <p class="place__paragraph">
               Возможно, вы&nbsp;смотрели Звягинцева и&nbsp;даже слышали историю
@@ -166,14 +176,14 @@
 в&nbsp;Мурманск.
             </p>
           </div>
-        </div>
-        <div class="place">
+        </article>
+        <article class="place">
           <h2 class="place__title">Алтай</h2>
           <div class="place__website">
-            <p class="place__url-heading">URL</p>
+            <span class="place__url-heading">URL</span>
             <a
               href="https://www.facebook.com/vera.bashmakova/posts/10156011613718822"
-              class="place__link"
+              class="place__link" target="_blank" rel="noopener noreferrer"
               >Facebook</a
             >
           </div>
@@ -181,13 +191,15 @@
             src="./images/place-altai.jpg"
             alt="Ноутбук на фоне густого леса"
             class="place__image">
-          <div>
+          <div class="place__paragraphs">
             <p class="place__paragraph">
               Алтай&nbsp;&mdash; одно из&nbsp;красивейших мест в&nbsp;России. В&nbsp;первую очередь из-за
 гор: если ехать вдоль хребта, вы&nbsp;увидите склоны, усыпанные
 соснами, горные реки и&nbsp;озёра. А&nbsp;если вы&nbsp;откроете в&nbsp;автомобиле
 окна, сможете познакомиться с&nbsp;невидимым чудом здешних мест &mdash;
 горным воздухом.
+            </p>
+            <p>
             </p>
             <p class="place__paragraph">
               Климат на&nbsp;Алтае умеренный, поэтому ехать сюда лучше всего летом.
@@ -196,12 +208,12 @@
 косули. И&nbsp;знаменитые манулы&nbsp;&mdash; тоже обитатели Алтайского края.
             </p>
           </div>
-        </div>
-        <div class="place">
+        </article>
+        <article class="place">
           <h2 class="place__title">Зимний Байкал</h2>
           <div class="place__website">
-            <p class="place__url-heading">URL</p>
-            <a href="https://vk.com/baikalmile" class="place__link"
+            <span class="place__url-heading">URL</span>
+            <a href="https://vk.com/baikalmile" class="place__link" target="_blank" rel="noopener noreferrer"
               >https://vk.com/baikalmile</a
             >
           </div>
@@ -209,11 +221,13 @@
             src="./images/place-winter-baikal.jpg"
             alt="Замерзшая вода в озере"
             class="place__image">
-          <div>
+          <div class="place__paragraphs">
             <p class="place__paragraph">
               Всем известен Байкал как крупнейшее озеро в&nbsp;мире. Многие также
 знают, что это самый большой источник пресной воды и&nbsp;одно из
 красивейших мест в&nbsp;России.
+            </p>
+            <p>
             </p>
             <p class="place__paragraph">
               Конечно, это всё так. Но&nbsp;Байкал ещё идеальное место
@@ -223,12 +237,12 @@
 &laquo;Байкальская миля&raquo; был поставлен мировой рекорд&nbsp;&mdash; 197.011&nbsp;км/ч.
             </p>
           </div>
-        </div>
-        <div class="place">
+        </article>
+        <article class="place">
           <h2 class="place__title">Карелия</h2>
           <div class="place__website">
-            <p class="place__url-heading">URL</p>
-            <a href="http://vodlozero.ru" class="place__link"
+            <span class="place__url-heading">URL</span>
+            <a href="http://vodlozero.ru" class="place__link" target="_blank" rel="noopener noreferrer"
               >http://vodlozero.ru/</a
             >
           </div>
@@ -236,7 +250,8 @@
             src="./images/place-karelia.jpg"
             alt="Река в окружении густого леса"
             class="place__image">
-          <p class="place__paragraph">
+          <div class="place__paragraphs">
+            <p class="place__paragraph">
             Сибирь заканчивается не&nbsp;на&nbsp;Урале, а&nbsp;в&nbsp;Карелии: образующая тайгу
 сибирская лиственница не&nbsp;растёт западнее Водлозера. Зато здесь она
 вымахивает на&nbsp;30&nbsp;метров&nbsp;&mdash; леса карельских национальных парков из-за
@@ -247,10 +262,11 @@
 паре метров от&nbsp;земли помечены медвежьими когтями. Чтобы все знали,
 кто тут хозяин.
           </p>
-        </div>
+          </div>
+        </article>
       </section>
       <section class="cover content__cover">
-        <a class="cover__item" href="#" target="_blank">
+        <a class="cover__item" href="https://stampsy.com/na-elektrichkakh-do-baikala" target="_blank" rel="noopener noreferrer">
           <h2 class="cover__title">До&nbsp;Байкала &laquo;на&nbsp;собаках&raquo;</h2>
           <p class="cover__subtitle">
             По&nbsp;мотивам учебной темы о&nbsp;Транссибе&nbsp;&mdash; путешествие от&nbsp;столицы до
@@ -260,39 +276,39 @@
       </section>
     </main>
     <footer class="footer">
-      <nav class="footer__link">
+      <nav class="footer__navigation">
         <a
           href="https://yandex.ru/maps"
           target="_blank"
-          class="footer__link footer__link_nav"
+          class="footer__link" rel="noopener noreferrer"
           >Карты</a
         >
         <a
           href="https://yandex.ru/pogoda"
           target="_blank"
-          class="footer__link footer__link_nav"
+          class="footer__link" rel="noopener noreferrer"
           >Погода</a
         >
         <a
           href="https://rasp.yandex.ru"
           target="_blank"
-          class="footer__link footer__link_nav"
+          class="footer__link" rel="noopener noreferrer"
           >Расписание</a
         >
         <a
           href="https://calendar.yandex.ru"
           target="_blank"
-          class="footer__link footer__link_nav"
+          class="footer__link" rel="noopener noreferrer"
           >Календарь</a
         >
         <a
           href="https://travel.yandex.ru"
           target="_blank"
-          class="footer__link footer__link_nav"
+          class="footer__link" rel="noopener noreferrer"
           >Путешествия</a
         >
       </nav>
-      <p class="footer__copyright">© 2022. Максимов Роман</p>
+      <p class="footer__copyright">&commat; 2022. Максимов Роман</p>
     </footer>
   </body>
 </html>

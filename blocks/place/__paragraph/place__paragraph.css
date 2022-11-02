@@ -5,15 +5,12 @@
     line-height: 29.34px;
     color: #FFFFFF;
     max-width: 484px;
-    margin: 0 0 26px 0;
-}
-:last-child {
-    margin-bottom: 0;
+    margin: 0;
 }
 @media screen and (max-width: 896px) {
     .place__paragraph {
-        max-width: 352px;
         font-size: 16px;
         line-height: 26.08px;
     }
 }
+
