@@ -1,5 +1,17 @@
 @media screen and (max-width: 544px) {
     .place__paragraphs {
         max-width: 288px;
+        gap: 26px;
+    }
+}
+@media screen and (max-width: 896px) {
+    .place__paragraphs {
+        font-size: 16px;
+        line-height: 26.08px;
+    }
+}
+@media screen and (max-width: 544px) {
+    .place__paragraphs {
+        margin: 0 auto;
     }
 }

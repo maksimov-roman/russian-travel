@@ -9,7 +9,7 @@
     cursor: pointer;
 }
 .place__link:hover {
-    opacity: 80%;
+    opacity: 0.8;
   }
   @media screen and (max-width: 896px) {
     .place__link {

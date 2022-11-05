@@ -8,14 +8,12 @@
 }
 @media screen and (max-width: 1152px) {
     .photo-grid {
-        max-width: calc(100% - 124px);
         grid-template-columns: repeat(3, 1fr);
         gap: 14px;
     }
 }
 @media screen and (max-width: 896px) {
     .photo-grid {
-        max-width: calc(100% - 64px);
         grid-template-columns: repeat(2, 1fr);
         padding: 0 24px;
         gap: 16px;
@@ -23,8 +21,8 @@
 }
 @media screen and (max-width: 544px) {
     .photo-grid {
-        max-width: calc(100% - 32px);
         grid-template-columns: 1fr;
         padding: 0 16px;
+        gap: 12px;
     }
 }

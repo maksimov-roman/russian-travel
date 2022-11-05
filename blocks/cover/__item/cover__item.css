@@ -14,6 +14,7 @@
     background-position: center;
     background-size: cover;
     z-index: 1;
+    gap: 32px;
 }
 .cover__item::before {
     content: '';
@@ -49,5 +50,6 @@
 @media screen and (max-width: 544px) {
     .cover__item {
         min-height: 200px;
+        gap: 16px;
     }
 }
