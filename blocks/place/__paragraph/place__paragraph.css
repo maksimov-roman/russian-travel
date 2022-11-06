@@ -9,13 +9,9 @@
 }
 @media screen and (max-width: 896px) {
     .place__paragraph {
+        max-width: 352px;
         font-size: 16px;
         line-height: 26.08px;
-    }
-}
-@media screen and (max-width: 896px) {
-    .place__paragraph {
-        max-width: 288px;
     }
 }
 
